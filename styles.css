@@ -1,37 +1,185 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+/* Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Navbar */
+nav {
+  background-color: #35424a;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 10px;
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
 }
 
-main {
-    padding: 20px;
+.nav-links li {
+  margin-left: 60px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff4b5c;
+}
+
+.logo {
+  float: left;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.hero {
+  background-image: url('https://keystoneacademic-res.cloudinary.com/image/upload/element/18/186580_IllinoisTech_MiesCampus.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ff4b5c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #ff1a2b;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1.1rem;
 }
 
 footer {
+  background-color: #35424a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ff4b5c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
     text-align: center;
-    padding: 10px;
-    background-color: #f0f0f0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero .btn {
+    padding: 8px 20px;
+  }
 }
