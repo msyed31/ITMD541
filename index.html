@@ -1,32 +1,74 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Index Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page for ITMD441/541 class lab work by Syed Mohammad Hussaini">
+  <title>Welcome to My ITMD441/541 Class Repository</title>
+  
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    </body>
-</html>
-<header>
-    <h1>My Index Page</h1>
-</header>
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-<main>
-    <section>
-        <h2>About Me</h2>
-        <p>I'm Syed Mohammad Hussaini, a student in Illinois institute of technology and science I'm passionate about Computers </p>
-        <img src="your-image.jpg" alt="Your Image">
-    </section>
-    </main>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1 class="logo">My ITMD 541 Journey</h1>
+      <ul class="nav-links">
+        <li><a href="#bio">About Me</a></li>
+        <li><a href="#course-info">Course Info</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <footer>
-    <p>&copy; Syed Mohammad Hussaini</p>
-</footer>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Welcome to My Web Development Journey</h1>
+      <p>Join me as I explore the world of web technologies in ITMD 541.</p>
+      <a href="#bio" class="btn">Learn More About Me</a>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="bio" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I'm <strong>Syed Mohammad Hussaini</strong>, a student in ITMD 541 with a passion for web development. I have experience working with HTML, CSS, and JavaScript, and I’m looking forward to expanding my skills further in this class. I love building clean, responsive websites and experimenting with modern web technologies.</p>
+      <img src="images.jpg"class="profile-pic">
+    </div>
+  </section>
+
+  <section id="course-info" class="section bg-light">
+    <div class="container">
+      <h2>About the Course</h2>
+      <p>ITMD441/541 is designed to delve deep into modern web technologies, covering both front-end and back-end development. Through this course, I will work on various projects that showcase my skills in web design, user experience, and development best practices.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p>As I progress through ITMD441/541, I will be adding links to various projects here. Stay tuned!</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Projects list</h3>
+          <p>A brief description of the project. This will showcase my skills learned in the course.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Syed Mohammad Hussaini. All rights reserved.</p>
+      <p>Follow my journey on <a href="https://github.com/msyed31">GitHub</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
