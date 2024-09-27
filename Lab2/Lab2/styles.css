@@ -1,0 +1,153 @@
+/* Flexbox Part 1 */
+.flexbox {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .flexitem {
+	background-color: red; 
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+  }
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+.box nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box nav ul li {
+    list-style: none;
+    flex: 1 1 auto;
+}
+
+.box nav ul li.item2 {
+    order: 3;
+}
+
+.box nav ul li.item3 {
+    order: 2;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+	.box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.card {
+		text-align: center;
+	}
+	
+	.tags ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.tags ul li {
+		background-color: #f2f2f2;
+		color: #333;
+		padding: 5px 10px;
+		margin: 5px;
+		border-radius: 5px;
+	}
+
+}
+
+
+/* end Flexbox Part 3 */
+
+/* Grid Part 1 */
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: 100px;
+  }
+  
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+.gridboxblue {
+	grid-column:2 / span 2; 
+	grid-row: 1	 / 2; 
+	z-index: 1; 
+  }
+  
+  .gridboxred {
+	grid-column: 1; 
+	grid-row: 1; 
+  } 
+  .grid {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr); 
+	grid-template-rows: repeat(4, 3fr); 
+
+  }
+  
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 400px 100px ;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-gap: 100px;
+}
+
+.box1 {
+    grid-area: header;
+}
+
+.box2 {
+    grid-area: sidebar;
+}
+
+.box3 {
+    grid-area: main;
+}
+
+.box4 {
+    grid-area: footer;
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+    display: inline-block;
+    background-color: #ccc;
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#transition-section .box a:hover {
+    background-color: #cc0000;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+/* end Transition Part */
